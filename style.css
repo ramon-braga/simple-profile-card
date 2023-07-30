@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.card-photo {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.card-photo .class-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #FFF;
+    padding: 3px;
+}
+
+.card-photo:hover {
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card .info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+
+.card .info .user-name {
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.card .info .job {
+    margin-top: 5px;
+    font-size: 1.25rem;
+}
+
+.card .social {
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+
+.bxl-facebook, .bxl-twitter, .bxl-instagram, .bxl-youtube {
+    background-color: #FFF;
+    color: #000;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.bxl-facebook:hover {
+    font-size: 3rem;
+    background-color: #4267B2;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.bxl-instagram:hover {
+    font-size: 3rem;
+    background-color: #e1306c;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.bxl-youtube:hover {
+    font-size: 3rem;
+    background-color: #ff0000;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.bxl-twitter:hover {
+    font-size: 3rem;
+    background-color: #00acee;
+    color: #FFF;
+    transition: 0.5s;
+}
+
+
+.card .buttons {
+    margin-top: 20px;
+}
+
+.buttons .sub,
+.buttons .message {
+    margin: 0px 5px;
+    padding: 8px;
+    width: 120px;
+    font-size: 1.2rem;
+    background-color: #FFF;
+    border-radius: 20px;
+    border: none;
+}
+
+.buttons .sub:hover,
+.buttons .message:hover {
+    cursor: pointer;
+    background-color: rgb(57, 137, 228);
+    color: #FFF;
+    font-weight: 900;
+    transition: 0.5s;
+    /* box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); */
+}
+
+.card .rates .bx {
+    margin-top: 20px;
+}
+
+.bx-heart,
+.bx-message-rounded,
+.bx-share {
+    font-size: 1.3rem;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0 20px;
+    border-right: 1px solid #FFF;
+}
+
+.bx-share {
+    border-right: none;
+}
+
+.bx-heart:hover,
+.bx-message-rounded:hover,
+.bx-share:hover {
+    font-size: 2rem;
+    transition: 0.5s;
+    /* padding: 0 20px; */
+}
